@@ -1,0 +1,44 @@
+[
+  {
+    "drinkName" : "Cappuccino",
+    "drinkType" : "Coffee",
+    "milk" : "dairy",
+    "flavor" : "vanilla",
+    "toppings" : "Whipped Cream"
+  },
+  {
+    "drinkName" : "Cappuccino",
+    "drinkType" : "Coffee",
+    "milk" : "non-dairy",
+    "flavor" : "vanilla",
+    "toppings" : "Whipped Cream"
+  },
+  {
+    "drinkName" : "Frappuccino",
+    "drinkType" : "Coffee",
+    "milk" : "dairy",
+    "flavor" : "mocha",
+    "toppings" : "Whipped Cream"
+  },
+  {
+    "drinkName" : "Frappuccino",
+    "drinkType" : "Coffee",
+    "milk" : "non-dairy",
+    "flavor" : "mocha",
+    "toppings" : "No Whipped Cream"
+  },
+  {
+    "drinkName" : "Iced Chai Latte",
+    "drinkType" : "Tea",
+    "milk" : "dairy",
+    "flavor" : "Cinnamon-Clove",
+    "toppings" : ""
+  },
+  {
+    "drinkName" : "Iced Chai Latte",
+    "drinkType" : "Tea",
+    "milk" : "non-dairy",
+    "flavor" : "Cinnamon-Clove",
+    "toppings" : ""
+  }
+]
