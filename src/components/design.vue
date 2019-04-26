@@ -1,15 +1,15 @@
 
 <template>
     <b-container fluid>
-
+        <a name="top"></a>
         <!-- NAVBAR -->
         <nav>
             <ul>
-                <li><a role="navigation"><router-link to="/home/">Home</router-link></a></li>
-                <li><a role="navigation"><router-link to="/buildDrink" class="active">Brewmaker 1.0</router-link></a></li>
-                <li><a role="navigation"><router-link to="/lexbot">Voice Order</router-link></a></li>
-                <li><a role="navigation"><router-link to="/menu">Explore Drinks</router-link></a></li>
-                <li><a role="navigation"><router-link to="/data">Fun Facts</router-link></a></li>
+                <li><a role="navigation"><router-link to="/home/" role='button' tabindex='0'>Home</router-link></a></li>
+                <li><a role="navigation"><router-link to="/buildDrink" class="active" role='button' tabindex='0'>Brewmaker 1.0</router-link></a></li>
+                <li><a role="navigation"><router-link to="/lexbot" role='button' tabindex='0'>Voice Order</router-link></a></li>
+                <li><a role="navigation"><router-link to="/menu" role='button' tabindex='0'>Explore Drinks</router-link></a></li>
+                <li><a role="navigation"><router-link to="/data" role='button' tabindex='0'>Fun Facts</router-link></a></li>
             </ul>
         </nav>
         
@@ -18,17 +18,17 @@
             <div id="design-content">
                 <h1>Do you want to choose a recipe or create a custom cup?</h1>
                 <!-- BEAN DATA -->
-                <div class="btn btn-outline-danger option" role="button" aria-pressed="false">
-                    <a href="#recipe-content">        
-                    <img src="../assets/list.png">
+                <div class="btn btn-outline-danger option">
+                    <a href="#recipe-content" role='button' tabindex='0' aria-pressed="false" onClick="document.location.reload(true)">
+                    <img src="../assets/list.png" alt="'Icon to choose a recipe">
                     <h2>Choose Recipe</h2>
                     </a>
                  </div> 
                 
                 <!-- BUILD A DRINK -->  
-                <div class="btn btn-outline-success option" role="button" aria-pressed="false">
-                    <a href="#build-content">
-                    <img src="../assets/cup.png">
+                <div class="btn btn-outline-success option">
+                    <a href="#build-content" role='button' tabindex='0' aria-pressed="false" onClick="document.location.reload(true)">
+                    <img src="../assets/cup.png" alt="'Icon to customize your drink">
                     <h2>Custom Cup</h2>
                     </a>
                  </div> 
@@ -51,7 +51,7 @@
                         <li class="ui-widget-content" value="iced-green-tea">Iced Green Tea</li>
                         <li class="ui-widget-content" value="iced-black-tea">Iced Black Tea</li>
                     </ol>
-                    <button role="button" aria-pressed="false">
+                    <button role='button' tabindex='0' aria-pressed="false">
                         <a href="#brew-content">
                             <h2>Brew My Drink!</h2>
                         </a>
@@ -103,7 +103,7 @@
                         <div class="option cream" id="milkType"><p>Half and Half</p></div>
 
                         <!-- BREW BUTTON -->
-                        <button role="button" aria-pressed="false">
+                        <button role='button' tabindex='0'aria-pressed="false" >
                             <a href="#brew-content">
                                 <h2>Brew My Drink!</h2>
                             </a>
@@ -129,6 +129,11 @@
                     <p id="brewing-text"></p>
                     <vue-p5 @sketch="sketch" @setup="setup" @draw="draw"></vue-p5>
                     <div id="handle" class="vue"></div>
+                    <button onclick="window.location.href = '#/buildDrink';">Click Here1</button>
+                    <a href="#top">Back to top of page</a>
+
+
+
                 </div>
                 
                 
@@ -172,8 +177,7 @@
                 sketch.draw = () => {
                     sketch.background(255);
                     
-                    sketch.fill("#6f4e37");
-                    
+
                 };
             },
             setup(sketch) {
