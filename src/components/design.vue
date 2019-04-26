@@ -129,8 +129,7 @@
                     <p id="brewing-text"></p>
                     <vue-p5 @sketch="sketch" @setup="setup" @draw="draw"></vue-p5>
                     <div id="handle" class="vue"></div>
-                    <button onclick="window.location.href = '#/buildDrink';">Click Here1</button>
-                    <a href="#top">Back to top of page</a>
+               
 
 
 
