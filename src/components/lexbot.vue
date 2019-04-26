@@ -1,23 +1,28 @@
 <template>
     <b-container fluid>
-       
-       
+
+
         <!-- NAVBAR -->
-    <nav>
-        <ul>
-            <li><a role="navigation"><router-link to="/home/">Home</router-link></a></li>
-            <li><a role="navigation"><router-link to="/buildDrink">Brewmaker 1.0</router-link></a></li>
-            <li><a role="navigation"><router-link to="/lexbot" class="active">Voice Order</router-link></a></li>
-            <li><a role="navigation"><router-link to="/menu">Explore Drinks</router-link></a></li>
-            <li><a role="navigation"><router-link to="/data">Fun Facts</router-link></a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a role="navigation"><router-link to="/home/">Home</router-link></a></li>
+                <li><a role="navigation"><router-link to="/buildDrink">Brewmaker 1.0</router-link></a></li>
+                <li><a role="navigation"><router-link to="/lexbot" class="active">Voice Order</router-link></a></li>
+                <li><a role="navigation"><router-link to="/menu">Explore Drinks</router-link></a></li>
+                <li><a role="navigation"><router-link to="/data">Fun Facts</router-link></a></li>
+            </ul>
+        </nav>
+
 
         <div id= 'centerContainer'>
 
             <div id="centerContent">
+
+
                 <h1>Coffee Bot</h1>
                 <div id="lexBot">
+                    <div id="instructions">Click mic button once to wake up bot, twice to place an order!<br>
+                        <strong> Say "Order a coffee/tea")</strong></div>
                     <b-row>
 
                         <b-col md="3" id="botTitle">
@@ -34,6 +39,7 @@
                     <b-row>
 
                         <b-col md="3">
+
                             <div class="audio-control2">
                                 <span>Status:</span><span id="message">
 
@@ -44,6 +50,7 @@
                             </div>
                         </b-col>
                     </b-row>
+
                     <b-row>
 
                         <b-col md="3">
@@ -56,9 +63,9 @@
                         <b-col md="3">
                             <div class="audio-control3">
 
-                                <!--<h1>Speak</h1>-->
-                                <img id="audio-control" class="white-circle"src="../assets/microphone.png">
 
+                                <!--<h1>Speak</h1>-->
+                                <img id="audio-control" class="white-circle"src="../assets/microphone.png" onClick="document.location.reload(true)">
                             </div>
                         </b-col>
 
@@ -74,7 +81,6 @@
         </div>
 
     </b-container>
-
 
 
 </template>
