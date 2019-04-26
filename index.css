@@ -23,9 +23,10 @@ html, body{
   width:100%;
   }
   
-  #build-content{
+  #brew-content{
+    height: 200vh;
+    margin-top: 120px;
   }
-
 .tooltip {
   display: inline-block;
   border-bottom: 1px dotted black;
@@ -80,16 +81,7 @@ html, body{
   width:40%!important;
   }
   
-  #cup {
-  border:2px solid #000;
-  border-radius:0 0 5rem 5rem;
-  height:100px;
-  left:200px;
-  margin-top:50px;
-  position:absolute;
-  width:125px;
-  z-index:1;
-  }
+  
   
   #dataContent {
   text-align:center;
@@ -125,27 +117,7 @@ html, body{
   margin-top:50px;
   }
   
-  #glass {
-  border:2px solid #000;
-  border-radius:0 0 1rem 1rem;
-  height:200px;
-  left:200px;
-  margin-top:50px;
-  position:absolute;
-  width:125px;
-  }
   
-  #handle {
-  background:transparent;
-  border:2px solid #000;
-  border-radius:50% 30%;
-  height:45px;
-  left:315px;
-  position:absolute;
-  top:25%;
-  width:30px;
-  z-index:0;
-  }
   #history-content{
   }
   
@@ -154,65 +126,9 @@ html, body{
   margin-bottom:100px;
   }
   
-  #ice-cube-1 {
-  background:#e3e4e1;
-  border:1px solid #dcf3ff;
-  border-radius:3px;
-  height:25px;
-  left:215px;
-  position:absolute;
-  top:325px;
-  width:25px;
-  z-index:1;
-  }
   
-  #ice-cube-2 {
-  background:#e3e4e1;
-  border:1px solid #dcf3ff;
-  border-radius:3px;
-  height:25px;
-  left:250px;
-  position:absolute;
-  top:325px;
-  width:25px;
-  z-index:1;
-  }
   
-  #ice-cube-3 {
-  background:#e3e4e1;
-  border:1px solid #dcf3ff;
-  border-radius:3px;
-  height:25px;
-  left:285px;
-  position:absolute;
-  top:325px;
-  width:25px;
-  z-index:1;
-  }
   
-  #ice-cube-4 {
-  background:#e3e4e1;
-  border:1px solid #dcf3ff;
-  border-radius:3px;
-  height:25px;
-  left:235px;
-  position:absolute;
-  top:285px;
-  width:25px;
-  z-index:1;
-  }
-  
-  #ice-cube-5 {
-  background:#e3e4e1;
-  border:1px solid #dcf3ff;
-  border-radius:3px;
-  height:25px;
-  left:275px;
-  position:absolute;
-  top:290px;
-  width:25px;
-  z-index:1;
-  }
   
   #logo-welcome img{
     width:500px;
@@ -919,6 +835,8 @@ html, body{
       font-family:Arial !important;
       font-size: 16px;
       margin-top:50px;
+      display: block;
+      margin: 0 auto;
     }
     #customize-menu #slider-range-max{
       max-width:200px;
@@ -947,6 +865,21 @@ html, body{
     .iced-coffee{
       background-color: #6f4e37;
     }
+    .green-tea{
+      background-color: #666633;
+    }
+    .black-tea{
+      background-color: #801a08;
+    }
+    .vanilla-latte{
+      background: linear-gradient(to bottom, #252C32 5%, #faf0e6 5%, #faf0e6 30%, #CCA26A 30%, #CCA26A 70%, #5c4033 70%);
+    }
+    .hazelnut-latte{
+      background: linear-gradient(to bottom, #252C32 5%, #faf0e6 5%, #faf0e6 30%, #CCA26A 30%, #CCA26A 70%, #5c4033 70%);
+    }
+    .chocolate-latte{
+      background: linear-gradient(to bottom, #252C32 5%, #faf0e6 5%, #faf0e6 30%, #CCA26A 30%, #CCA26A 70%, #5c4033 70%);
+    }
     #small-cup {
       background:#252C32;
       border:2px solid #000;
@@ -959,26 +892,32 @@ html, body{
     }
       
     #straw {
-      -ms-transform:rotate(20deg);
-      -webkit-transform:rotate(20deg);
-      background:#134e13;
-      height:225px;
-      left:265px;
-      position:absolute;
-      top:125px;
-      transform:rotate(20deg);
-      width:15px;
+      -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    background: #134e13;
+    height: 225px;
+    transform: rotate(20deg);
+    width: 15px;
+    position: relative;
+    display: inline-block;
+    margin-left: -60px;
+    }
+    #ice-cubes{
+      display:inline-block;
+      margin-left: -30px;
     }
     #ice-cube-1 {
       background:#e3e4e1;
       border:1px solid #dcf3ff;
       border-radius:3px;
       height:25px;
-      left:215px;
-      position:absolute;
-      top:325px;
+      position: relative;
+    display: inline-block;
+    
       width:25px;
       z-index:1;
+      margin-left: -120px;
+      margin-bottom: 10px;
     }
         
     #ice-cube-2 {
@@ -986,11 +925,12 @@ html, body{
       border:1px solid #dcf3ff;
       border-radius:3px;
       height:25px;
-      left:250px;
-      position:absolute;
-      top:325px;
+      position: relative;
+    display: inline-block;
       width:25px;
       z-index:1;
+      margin-left: 10px;
+      margin-bottom: 10px;
     }
     
     #ice-cube-3 {
@@ -998,11 +938,12 @@ html, body{
       border:1px solid #dcf3ff;
       border-radius:3px;
       height:25px;
-      left:285px;
-      position:absolute;
-      top:325px;
+      position: relative;
+    display: inline-block;
       width:25px;
       z-index:1;
+      margin-left: 10px;
+      margin-bottom: 10px;
     }
     
     #ice-cube-4 {
@@ -1010,11 +951,12 @@ html, body{
       border:1px solid #dcf3ff;
       border-radius:3px;
       height:25px;
-      left:235px;
-      position:absolute;
-      top:285px;
+      position: relative;
+    display: inline-block;
       width:25px;
-      z-index:1;
+      margin-left: -85px;
+      z-index: 1;
+      margin-bottom: 45px;
     }
     
     #ice-cube-5 {
@@ -1022,43 +964,45 @@ html, body{
       border:1px solid #dcf3ff;
       border-radius:3px;
       height:25px;
-      left:275px;
-      position:absolute;
-      top:290px;
+      position: relative;
+    display: inline-block;
       width:25px;
-      z-index:1;
+      margin-bottom: 45px;
+    margin-left: 10px;
     }
   
     #glass {
       border:2px solid #000;
       border-radius:0 0 1rem 1rem;
       height:200px;
-      left:200px;
-      margin-top:50px;
-      position:absolute;
+      height: 200px;
+      display: inline-block;
       width:125px;
+      margin-left: 50px;
     }
       
     #handle {
-      background:transparent;
-      border:2px solid #000;
-      border-radius:50% 30%;
-      height:45px;
-      left:315px;
-      top:25%;
-      width:30px;
-      z-index:0;
+      background: transparent;
+      border: 3px solid #000;
+      border-radius: 50% 30%;
+      height: 80px;
+      width: 50px;
+      z-index: 0;
+      display: inline-block;
+      margin-left: -25px;
+      margin-bottom: 91px;
     }
   
     #cup {
-      border:2px solid #000;
-      border-radius:0 0 5rem 5rem;
-      height:100px;
-      left:200px;
-      margin-top:50px;
-      position:absolute;
-      width:125px;
-      z-index:1;
+      border: 2px solid #000;
+      border-radius: 0 0 5rem 5rem;
+      height: 200px;
+      margin-top: 50px;
+      width: 220px;
+      z-index: 1;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
     }
   
   /*---------------- P5 BREW ----------------------*/
@@ -1074,7 +1018,7 @@ html, body{
     margin-left: -60px;
   }
   .hidden{
-    display:none;
+    display:none !important;
   }
   div.p5{
     display:inline-block;
@@ -1107,6 +1051,8 @@ html, body{
         border: 1px solid black;
         text-decoration: none !important;
         margin-top:50px;
+        display:block;
+        margin: 0 auto;
   }
   .brew-content button h2{
       
@@ -1119,21 +1065,10 @@ html, body{
   .brew-content button:hover{
     background-color:#8b4513;
   }
-
-
-#instructions {
-  display:inline-block;
-  color:#444;
-  border:1px solid #CCC;
-  background:#DDD;
-  box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
-  cursor:pointer;
-  vertical-align:middle;
-  max-width: -webkit-fill-available;
-  padding: 5px;
-  text-align: center;
-}
-#instructions:active {
-  color:red;
-  box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
-}
+  .drink-area{
+    margin-top:100px;
+  }
+  .drink-area h1{
+    margin-bottom: 100px !important;
+  }
+  
