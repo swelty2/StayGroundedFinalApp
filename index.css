@@ -16,7 +16,7 @@ html, body{
   text-align:center;
   width:100%;
   }
-  
+
   #brewTable {
   display:inline-table;
   height:100px;
@@ -25,6 +25,44 @@ html, body{
   
   #build-content{
   }
+
+.tooltip {
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "sdfdsf";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0;
+}
   
   /*#centerContainer {
   text-align:center;
@@ -646,7 +684,8 @@ html, body{
   }
 
   .audio-control2 {
-    margin-top: 92% !important;
+    /*margin-top: 92% !important;*/
+    margin-top: -60% !important;
     font-size: 16pt;
   }
 
@@ -655,9 +694,15 @@ html, body{
       top: -20%;
   }*/
 
-  .audio-control3 {
-    margin-top: 210% !important;
-  }
+.audio-control3 {
+  /* margin-top: 210% !important; */
+  margin-top: -180% !important;
+}
+
+.col-md-3 {
+  padding-top: 32% !important;
+  /* margin-top: 2% !important; */
+}
 
   .jumbotron {
     background-color: #fdfdf7 !important;
@@ -1074,5 +1119,21 @@ html, body{
   .brew-content button:hover{
     background-color:#8b4513;
   }
-  
-  
+
+
+#instructions {
+  display:inline-block;
+  color:#444;
+  border:1px solid #CCC;
+  background:#DDD;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+  cursor:pointer;
+  vertical-align:middle;
+  max-width: -webkit-fill-available;
+  padding: 5px;
+  text-align: center;
+}
+#instructions:active {
+  color:red;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
