@@ -103,7 +103,7 @@
                         <div class="option cream" id="milkType"><p>Half and Half</p></div>
 
                         <!-- BREW BUTTON -->
-                        <button role='button' tabindex='0'aria-pressed="false" >
+                        <button role='button' tabindex='0' aria-pressed="false" >
                             <a href="#brew-content">
                                 <h2>Brew My Drink!</h2>
                             </a>
@@ -124,23 +124,29 @@
             </div>
             <hr>
             <div class="brew-content" id="brew-content">
-                <h1>Your Drink!</h1>
+                <h1>Stir Your Drink!</h1>
                 <div class="p5">
                     <p id="brewing-text"></p>
                     <vue-p5 @sketch="sketch" @setup="setup" @draw="draw"></vue-p5>
                     <div id="handle" class="vue"></div>
-               
-
-
-
+                    <!-- BREW BUTTON -->
+                    <button role="button" aria-pressed="false" >
+                        <a href="#custom-drink" id="custom-button">
+                            <h2>Done Stirring</h2>
+                        </a>
+                    </button>
                 </div>
                 
                 
                 
-                <div class="drink-area">
+                
+                <div class="drink-area" id="custom-drink">
+                    <h1>Here's Your Drink!</h1>
+                    <div id="drink-description"></div>
                     <div id="cup" class="hidden"></div>
                     <div id="handle" class="hidden"></div>
                     <div id="glass" class="hidden"></div>
+                    <!--<div id="straw" class="hidden"></div>-->
                     <div id="ice-cubes" class="hidden">
                         <div id="ice-cube-1"></div>
                         <div id="ice-cube-2"></div>
@@ -148,9 +154,14 @@
                         <div id="ice-cube-4"></div>
                         <div id="ice-cube-5"></div>
                     </div>
-                    <div id="straw" class="hidden"></div>
+                    
+                    
+                    
+                    
                     
                 </div>
+                <!-- BUILD A DRINK -->
+                    <router-link to="/home/">Back To Home!</router-link>
             </div>
 
             
