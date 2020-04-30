@@ -13,7 +13,7 @@
     "@shopify/draggable": "^1.0.0-beta.8",
     "apexcharts": "^3.6.6",
     "bootstrap-vue": "^2.0.0-rc.18",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "jquery-ui": "^1.12.1",
     "jquery-ui-dist": "^1.12.1",
     "vue": "^2.6.10",
